@@ -1,0 +1,33 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo App</title>
+<script defer src="main.js"></script></head>
+<body>
+  <h1>My Todos</h1>
+  <div class="project-selector">
+    <label for="projects">Project:</label>
+      <select id="projects">
+        <option value="default">Default</option>
+      </select>
+      <button id="new-project-btn">+New Project</button>
+    </div>
+
+    <div class="todo-form">
+    <input type="text" id="todo-title" placeholder="New Task" />
+    <input type="date" id="todo-date" />
+    <label for="todo-priority">Priority:</label>
+    <select id="todo-priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button id="add-task">Add Task</button>
+  </div>
+
+    <div id="todo-list"></div>
+
+</body>
+</html>
